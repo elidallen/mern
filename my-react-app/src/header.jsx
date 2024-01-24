@@ -1,6 +1,6 @@
-import {Link} from "react-router-dom";
-import {useContext, useEffect, useState} from "react";
-import {UserContext} from "./UserContext";
+import { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { UserContext } from "./UserContext";
 
 export default function Header() {
   const {setUserInfo,userInfo} = useContext(UserContext);
@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link to="/" className="logo">MyBlog</Link>
+      <Link to="/" className="logo">Blog</Link>
       <nav>
         {username && (
           <>

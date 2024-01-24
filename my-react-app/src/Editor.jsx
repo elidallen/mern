@@ -25,3 +25,4 @@ export default function Editor({value,onChange}) {
     </div>
   );
 }
+
